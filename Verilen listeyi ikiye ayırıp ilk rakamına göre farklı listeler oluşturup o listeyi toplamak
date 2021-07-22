@@ -1,0 +1,16 @@
+x=0
+odd=[]
+even=[]
+def sum_even_and_odd(sequence):
+    for i in sequence:
+        if (i / 10) % 2 == 0:
+            even.append(i)
+        else:
+            odd.append(i)
+
+    return  sum(even) ,sum(odd)
+
+l1=[10,20,30,40,50,60]
+output1 = sum_even_and_odd(l1)
+print(output1)
+
