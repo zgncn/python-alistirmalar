@@ -1,0 +1,8 @@
+def zippy(x,y):
+    zipper = []
+    for i in range(len(x)):
+        zipper.append((x[i], y[i]))
+    return zipper
+
+
+print(zippy([10,20,30],"abc"))
