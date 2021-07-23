@@ -1,0 +1,10 @@
+
+satis = [45,50,35,50]
+maliyet = [15,17,12,19]
+total = 0
+
+for i,j in zip(satis,maliyet):
+    kar = i - j
+    total = total + kar
+    print(f"bu ayki kar {kar}")
+print(f"toplam kar {total}")
