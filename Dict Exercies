@@ -1,0 +1,15 @@
+login = {"user1":"1234", "user2":"12345", "user3":"123456"}
+def login_system():
+    username = input("enter your username")
+    if username in login:
+        password = input("Enter your password")
+        if password == login[username]:
+            print(f'Welcome to the system Mr. {username}')
+        else:
+            print(f"Your password is wrong ..Try again {username}")
+    else:
+        print(f"Wrong username")
+
+login_system()
+
+
